@@ -4,7 +4,7 @@
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
-SPHINXPROJ    = speech_and_language_processing
+SPHINXPROJ    = speech_and_natural_processing
 SOURCEDIR     = source
 BUILDDIR      = build
 

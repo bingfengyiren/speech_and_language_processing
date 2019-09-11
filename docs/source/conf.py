@@ -18,16 +18,15 @@
 
 
 # -- Project information -----------------------------------------------------
-from recommonmark.parser import CommonMarkParser
 
-project = 'speech_and_language_processing'
-copyright = '2019, 崔鸣'
-author = '崔鸣'
+project = 'speech_and_natural_processing'
+copyright = '2019, cuiming'
+author = 'cuiming'
 
 # The short X.Y version
 version = ''
 # The full version, including alpha/beta/rc tags
-release = 'v0.1'
+release = '0.0.1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -39,7 +38,8 @@ release = 'v0.1'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ["recommonmark"]
+extensions = [
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -47,8 +47,8 @@ templates_path = ['_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-source_suffix = ['.rst', '.md']
-#source_suffix = '.rst'
+# source_suffix = ['.rst', '.md']
+source_suffix = '.rst'
 
 # The master toctree document.
 master_doc = 'index'
@@ -58,7 +58,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = 'cn'
+language = 'zh-cn'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -101,7 +101,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'speech_and_language_processingdoc'
+htmlhelp_basename = 'speech_and_natural_processingdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -128,8 +128,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'speech_and_language_processing.tex', 'speech\\_and\\_language\\_processing Documentation',
-     '崔鸣', 'manual'),
+    (master_doc, 'speech_and_natural_processing.tex', 'speech\\_and\\_natural\\_processing Documentation',
+     'cuiming', 'manual'),
 ]
 
 
@@ -138,7 +138,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'speech_and_language_processing', 'speech_and_language_processing Documentation',
+    (master_doc, 'speech_and_natural_processing', 'speech_and_natural_processing Documentation',
      [author], 1)
 ]
 
@@ -149,11 +149,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'speech_and_language_processing', 'speech_and_language_processing Documentation',
-     author, 'speech_and_language_processing', 'One line description of project.',
+    (master_doc, 'speech_and_natural_processing', 'speech_and_natural_processing Documentation',
+     author, 'speech_and_natural_processing', 'One line description of project.',
      'Miscellaneous'),
 ]
-
-#source_parsers = {
-#    '.md': CommonMarkParser,
-#}
