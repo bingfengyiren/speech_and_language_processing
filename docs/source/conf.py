@@ -16,9 +16,9 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 from recommonmark.parser import CommonMarkParser
-source_parsers = {
-    '.md': CommonMarkParser,
-}
+#source_parsers = {
+#    '.md': CommonMarkParser,
+#}
 
 
 # -- Project information -----------------------------------------------------
@@ -43,6 +43,7 @@ release = '0.0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+	'recommonmark'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
