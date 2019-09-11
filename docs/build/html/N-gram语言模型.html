@@ -44,7 +44,6 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="hello,world" href="hello.html" />
     <link rel="prev" title="Welcome to speech_and_natural_processing’s documentation!" href="index.html" /> 
 </head>
 
@@ -91,8 +90,28 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">n-gram语言模型</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hello.html">hello,world</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">n-gram语言模型</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#n-grams">3.1 n-grams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">3.2 语言模型评估</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">3.2.1 困惑度</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">3.3 泛化和零值处理</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">3.3.1 未知词</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">3.4 平滑处理</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#laplace-smoothing">3.4.1 拉普拉斯平滑(laplace smoothing)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add-k-smoothing">3.4.2 Add-k smoothing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#backoff-and-interpolation">3.4.3 Backoff and Interpolation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#kneser-ney-smoothing">3.5 Kneser-Ney Smoothing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-web-and-stupid-backoff">3.6 The Web and Stupid Backoff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">3.7 高级主题：熵的困惑度</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">## 3.8 总结</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -159,9 +178,46 @@
             
   <div class="section" id="n-gram">
 <h1>n-gram语言模型<a class="headerlink" href="#n-gram" title="Permalink to this headline">¶</a></h1>
-<p>## 3.7 高级主题：熵的困惑度</p>
-<p>## 3.8 总结
-本章介绍了在自然语言处理中应用最广泛的工具：语言模型和n-gram</p>
+<div class="section" id="n-grams">
+<h2>3.1 n-grams<a class="headerlink" href="#n-grams" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id1">
+<h2>3.2 语言模型评估<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h3>3.2.1 困惑度<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>3.3 泛化和零值处理<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h3>3.3.1 未知词<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>3.4 平滑处理<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="laplace-smoothing">
+<h3>3.4.1 拉普拉斯平滑(laplace smoothing)<a class="headerlink" href="#laplace-smoothing" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="add-k-smoothing">
+<h3>3.4.2 Add-k smoothing<a class="headerlink" href="#add-k-smoothing" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="backoff-and-interpolation">
+<h3>3.4.3 Backoff and Interpolation<a class="headerlink" href="#backoff-and-interpolation" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="kneser-ney-smoothing">
+<h2>3.5 Kneser-Ney Smoothing<a class="headerlink" href="#kneser-ney-smoothing" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="the-web-and-stupid-backoff">
+<h2>3.6 The Web and Stupid Backoff<a class="headerlink" href="#the-web-and-stupid-backoff" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id6">
+<h2>3.7 高级主题：熵的困惑度<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id7">
+<h2>## 3.8 总结<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>本章介绍了在自然语言处理中应用最广泛的工具：语言模型和n-gram</p>
+</div>
 </div>
 
 
@@ -171,8 +227,6 @@
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="hello.html" class="btn btn-neutral float-right" title="hello,world" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral float-left" title="Welcome to speech_and_natural_processing’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

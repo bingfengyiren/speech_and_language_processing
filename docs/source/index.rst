@@ -11,7 +11,6 @@ Welcome to speech_and_natural_processing's documentation!
    :caption: Contents:
 	
    n-gram语言模型
-   hello
 
 
 
