@@ -10,8 +10,8 @@ Welcome to speech_and_natural_processing's documentation!
    :maxdepth: 2
    :caption: Contents:
 	
-   hello
    n-gram语言模型
+   hello
 
 
 
