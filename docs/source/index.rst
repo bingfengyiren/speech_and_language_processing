@@ -10,7 +10,8 @@ Welcome to speech_and_natural_processing's documentation!
    :maxdepth: 2
    :caption: Contents:
 	
-   n-gram语言模型
+   第三章：n-gram语言模型
+   第十七章：信息抽取
 
 
 
