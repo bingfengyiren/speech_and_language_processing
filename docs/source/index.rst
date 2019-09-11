@@ -9,13 +9,13 @@ Welcome to speech_and_natural_processing's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+	n-gram语言模型
 
 
 
 Indices and tables
 ==================
 
-* :ref:`N-gram语言模型.md`
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
